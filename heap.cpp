@@ -1,7 +1,12 @@
 // all the functions for the min-heap
 
 #include "data_structures.h"
+#include "main.h"
 #include "util.h"
+
+void READ(File *inputfile, ELEMENT *V){
+
+}
 
 //PrintArray - print out the ordered array, v?
 

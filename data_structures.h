@@ -1,3 +1,6 @@
+#ifndef DATA_STRUCTURES_H
+#define DATA_STRUCTURES_H
+
 #include <iostream>
 
 typedef struct TAG_ELEMENT{
@@ -12,3 +15,4 @@ typedef struct TAG_HEAP{
     int *H;                         // array of indices/pointers to the Element array
 }HEAP;
 
+#endif // DATA_STRUCTURES_H

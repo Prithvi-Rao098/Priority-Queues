@@ -10,12 +10,27 @@ using namespace std;
 
 int main(int argc, char *argv[]) {
     string command;
+    FILE *inputfile;
+    FILE *outputfile;
+
+    ELEMENT **V;                                                    //initialize the element array
+    HEAP *pHEAP;                                                    //initialize the heap array
+
     while (cin >> command) {
         if (command == "Stop") {
             cout << "Instruction: Stop" << endl;
             break;
         }else if (command == "Read") {
             cout << "Instruction: Read" << endl;
+
+            inputfile = fopen(argv[1], "r");                        //open the file to read
+            if (!inputfile){
+                fprintf(stderr, "Error: cannot open file %s\n", argv[1]);
+                exit(0);
+            }
+
+
+
 
         }
         else if (command == "PrintArray") {
