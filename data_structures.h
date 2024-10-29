@@ -1,7 +1,7 @@
 #ifndef DATA_STRUCTURES_H
 #define DATA_STRUCTURES_H
 
-#include <iostream>
+#include <stdio.h>
 
 typedef struct TAG_ELEMENT{
     int index;                      // index of the element in the element array

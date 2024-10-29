@@ -5,7 +5,7 @@
 #include "util.h"
 
 void READ(File *inputfile, ELEMENT *V){
-
+    
 }
 
 //PrintArray - print out the ordered array, v?
