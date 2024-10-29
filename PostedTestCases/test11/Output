@@ -1,0 +1,63 @@
+Instruction: Read
+Instruction: Insert 1
+Element V[1] inserted into the heap
+Instruction: Insert 2
+Element V[2] inserted into the heap
+Instruction: Insert 3
+Element V[3] inserted into the heap
+Instruction: Insert 4
+Element V[4] inserted into the heap
+Instruction: Insert 5
+Element V[5] inserted into the heap
+Instruction: Insert 6
+Element V[6] inserted into the heap
+Instruction: Insert 7
+Element V[7] inserted into the heap
+Instruction: Insert 8
+Element V[8] inserted into the heap
+Instruction: Insert 9
+Element V[9] inserted into the heap
+Instruction: PrintArray
+1 9.000000 8
+2 8.000000 6
+3 7.000000 5
+4 6.000000 9
+5 5.000000 7
+6 4.000000 3
+7 3.000000 4
+8 2.000000 2
+9 1.000000 1
+Instruction: PrintHeap
+Capacity = 9, size = 9
+H[1] = 9
+H[2] = 8
+H[3] = 6
+H[4] = 7
+H[5] = 3
+H[6] = 2
+H[7] = 5
+H[8] = 1
+H[9] = 4
+Instruction: ExtractMin
+Instruction: PrintArray
+1 9.000000 8
+2 8.000000 6
+3 7.000000 5
+4 6.000000 4
+5 5.000000 7
+6 4.000000 3
+7 3.000000 2
+8 2.000000 1
+9 1.000000 0
+Instruction: PrintHeap
+Capacity = 9, size = 8
+H[1] = 8
+H[2] = 7
+H[3] = 6
+H[4] = 4
+H[5] = 3
+H[6] = 2
+H[7] = 5
+H[8] = 1
+Instruction: Write
+Instruction: Stop

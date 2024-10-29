@@ -1,0 +1,13 @@
+Read
+BuildHeap
+PrintArray
+PrintHeap
+DecreaseKey 1 -1
+ExtractMin
+PrintArray
+PrintHeap
+DecreaseKey 1 -3
+PrintArray
+PrintHeap
+Write
+Stop

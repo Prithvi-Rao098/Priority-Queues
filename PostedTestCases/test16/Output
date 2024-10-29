@@ -1,0 +1,55 @@
+Instruction: Read
+Instruction: BuildHeap
+Instruction: PrintArray
+1 9.000000 9
+2 8.000000 8
+3 7.000000 7
+4 6.000000 4
+5 5.000000 5
+6 4.000000 6
+7 3.000000 3
+8 2.000000 2
+9 1.000000 1
+Instruction: PrintHeap
+Capacity = 9, size = 9
+H[1] = 9
+H[2] = 8
+H[3] = 7
+H[4] = 4
+H[5] = 5
+H[6] = 6
+H[7] = 3
+H[8] = 2
+H[9] = 1
+Instruction: DecreaseKey 1 -1.000000
+Instruction: DecreaseKey 2 -2.000000
+Instruction: DecreaseKey 3 -3.000000
+Instruction: DecreaseKey 4 -4.000000
+Instruction: DecreaseKey 5 -5.000000
+Instruction: DecreaseKey 6 -6.000000
+Instruction: DecreaseKey 7 -7.000000
+Instruction: DecreaseKey 8 -8.000000
+Instruction: DecreaseKey 9 -9.000000
+Instruction: PrintArray
+1 -1.000000 8
+2 -2.000000 6
+3 -3.000000 5
+4 -4.000000 9
+5 -5.000000 7
+6 -6.000000 3
+7 -7.000000 4
+8 -8.000000 2
+9 -9.000000 1
+Instruction: PrintHeap
+Capacity = 9, size = 9
+H[1] = 9
+H[2] = 8
+H[3] = 6
+H[4] = 7
+H[5] = 3
+H[6] = 2
+H[7] = 5
+H[8] = 1
+H[9] = 4
+Instruction: Write
+Instruction: Stop

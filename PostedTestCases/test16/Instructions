@@ -1,0 +1,17 @@
+Read
+BuildHeap
+PrintArray
+PrintHeap
+DecreaseKey 1 -1
+DecreaseKey 2 -2
+DecreaseKey 3 -3
+DecreaseKey 4 -4
+DecreaseKey 5 -5
+DecreaseKey 6 -6
+DecreaseKey 7 -7
+DecreaseKey 8 -8
+DecreaseKey 9 -9
+PrintArray
+PrintHeap
+Write
+Stop

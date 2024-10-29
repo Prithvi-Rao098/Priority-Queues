@@ -1,0 +1,54 @@
+Instruction: Read
+Instruction: BuildHeap
+Instruction: PrintArray
+1 9.000000 9
+2 8.000000 8
+3 7.000000 7
+4 6.000000 4
+5 5.000000 5
+6 4.000000 6
+7 3.000000 3
+8 2.000000 2
+9 1.000000 1
+Instruction: PrintHeap
+Capacity = 9, size = 9
+H[1] = 9
+H[2] = 8
+H[3] = 7
+H[4] = 4
+H[5] = 5
+H[6] = 6
+H[7] = 3
+H[8] = 2
+H[9] = 1
+Instruction: ExtractMin
+Instruction: ExtractMin
+Instruction: ExtractMin
+Instruction: ExtractMin
+Instruction: ExtractMin
+Instruction: PrintArray
+1 9.000000 4
+2 8.000000 2
+3 7.000000 3
+4 6.000000 1
+5 5.000000 0
+6 4.000000 0
+7 3.000000 0
+8 2.000000 0
+9 1.000000 0
+Instruction: PrintHeap
+Capacity = 9, size = 4
+H[1] = 4
+H[2] = 2
+H[3] = 3
+H[4] = 1
+Instruction: Insert 9
+Element V[9] inserted into the heap
+Instruction: Insert 8
+Element V[8] inserted into the heap
+Instruction: Insert 7
+Element V[7] inserted into the heap
+Instruction: Insert 6
+Element V[6] inserted into the heap
+Instruction: Write
+Instruction: Stop

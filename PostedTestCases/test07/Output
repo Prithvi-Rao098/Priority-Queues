@@ -1,0 +1,33 @@
+Instruction: Read
+Instruction: PrintArray
+1 9.000000 0
+2 8.000000 0
+3 7.000000 0
+4 6.000000 0
+5 5.000000 0
+6 4.000000 0
+7 3.000000 0
+8 2.000000 0
+9 1.000000 0
+Instruction: PrintHeap
+Capacity = 9, size = 0
+Instruction: Insert 1
+Element V[1] inserted into the heap
+Instruction: Insert 9
+Element V[9] inserted into the heap
+Instruction: PrintArray
+1 9.000000 2
+2 8.000000 0
+3 7.000000 0
+4 6.000000 0
+5 5.000000 0
+6 4.000000 0
+7 3.000000 0
+8 2.000000 0
+9 1.000000 1
+Instruction: PrintHeap
+Capacity = 9, size = 2
+H[1] = 9
+H[2] = 1
+Instruction: Write
+Instruction: Stop
