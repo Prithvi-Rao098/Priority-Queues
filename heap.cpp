@@ -15,7 +15,7 @@ void bubbleSort(int index);
 
 //BuildHeap - essentially Heapify down
 void BuildHeap() {
-    pHEAP->size = pHEAP->capacity; // Assume array A is fully utilized up to its capacity
+    pHEAP->size = pHEAP->capacity; 
     for (int i = 1; i <= pHEAP->size; ++i) {
         V[i]->pos = i;
         pHEAP->H[i] = i;
@@ -43,7 +43,6 @@ void Insert(int index) {
     pHEAP->H[pHEAP->size] = index;
     V[index]->pos = pHEAP->size;
 
-    // Perform up-heap operation (bubble up)
     bubbleSort(pHEAP->size);
 
     cout << "Element V[" << index << "] inserted into the heap" << endl;
@@ -72,29 +71,40 @@ void ExtractMin (){
 
 }
  
-//DecreaseKey - Figure out what this means
-void DecreaseKey(int )
+//DecreaseKey 
+void DecreaseKey(int index, double newKey) {
+
+    if (index < 1 || index > pHEAP->capacity || newKey >= V[index]->key) {
+        cerr << "Error: invalid call to DecreaseKey" << endl;
+        return;
+    }
+    if (V[index]->pos == 0) {
+        cerr << "Error: V[" << index << "] not in the heap" << endl;
+        return;
+    }
+    V[index]->key = newKey;
+    bubbleSort(V[index]->pos);
+}
 
 
-
-
+ 
 
 void MinHeapify(HEAP* pHEAP, int index) {
-    int left = 2 * index;     // index of left child
-    int right = 2 * index + 1; // index of right child
+    int left = 2 * index; 
+    int right = 2 * index + 1; 
     int smallest = index;
 
-    // Check if left child exists and is smaller than current node
+
     if (left <= pHEAP->size && V[pHEAP->H[left]]->key < V[pHEAP->H[smallest]]->key) {
         smallest = left;
     }
 
-    // Check if right child exists and is smaller than the current smallest
+
     if (right <= pHEAP->size && V[pHEAP->H[right]]->key < V[pHEAP->H[smallest]]->key) {
         smallest = right;
     }
 
-    // If the smallest is not the current node, swap and continue heapifying
+
     if (smallest != index) {
         
         swap(pHEAP->H[index], pHEAP->H[smallest]);

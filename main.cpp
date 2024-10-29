@@ -1,3 +1,10 @@
+/*
+CSE 310 - PJ02
+Name: Prithvi Rao 
+Student ID: 1228082663
+*/
+
+
 #include "main.h"
 #include "data_structures.h"
 #include "util.h"
@@ -7,8 +14,8 @@
 #include <string>
 #include <iomanip>
 
-ELEMENT **V = nullptr;  // Definition of the global variable V
-HEAP *pHEAP = nullptr;  // Definition of the global variable pHEAP
+ELEMENT **V = nullptr;  //global variable V
+HEAP *pHEAP = nullptr;  //global variable pHEAP
 
 using namespace std;
 
@@ -96,8 +103,12 @@ int main(int argc, char *argv[]) {
         }
 
         else if (command == "DecreaseKey") {
-            cout << "Instruction: DecreaseKey" << endl;
-
+            int index;
+            double NewKey;
+            cin >> index;
+            cin >> NewKey;
+            cout << "Instruction: DecreaseKey " << index << " " << NewKey << endl;
+            DecreaseKey(index, NewKey);
         }
 
         else if (command == "Write") {

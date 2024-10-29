@@ -7,6 +7,6 @@
 void BuildHeap();
 void Insert(int index);
 void ExtractMin ();
-
+void DecreaseKey(int index, double newKey);
 
 #endif // HEAP_H
